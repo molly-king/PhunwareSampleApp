@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_material_light"
+    android:weightSum="100"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="25"
+    android:scaleType="fitStart"
+    android:id="@+id/venue_image"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="75">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/venue_detail_name"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:layout_marginTop="14dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/venue_detail_address"
+        android:layout_below="@id/venue_detail_name"
+        android:layout_marginTop="28dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/venue_detail_city"
+        android:layout_below="@id/venue_detail_address"
+        android:layout_marginBottom="28dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venue_detail_city"
+        android:id="@+id/venue_schedule_list"/>
+</RelativeLayout>
+
+</LinearLayout>
